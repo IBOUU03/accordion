@@ -1,0 +1,57 @@
+.accordion, .accordion2 {
+  border: none;
+  cursor: pointer;
+  background-color: gray;
+  color: white;
+  height: 40px;
+  width: 500px;
+  text-align: center;
+  display: block;
+}
+
+.div-style, .div-style2 {
+  width: 500px;
+  display: none;
+}
+
+#accordion-sec {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.accor {
+  width: 50%;
+}
+
+section {
+  width: 100%;
+}
+
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+}
+
+input {
+  display: none;
+}
+
+#addImage {
+  cursor: pointer;
+  font-size: 50px;
+}
+
+img {
+  width: 400px;
+  height: 400px;
+}/*# sourceMappingURL=style.css.map */
