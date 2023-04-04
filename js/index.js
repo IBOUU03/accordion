@@ -78,37 +78,4 @@ uploadIcon.previousElementSibling.addEventListener("change", (e) =>{
     const { files } = e.target;
     const body = document.querySelector("body");
 
-    // for(let file of files){
-    //     const fileReader = new FileReader();
-
-    //     fileReader.onloadend = (e) => {
-    //         const { result } = e.target;
-    //         const creatImg = document.createElement("img");
-    //         creatImg.src = result;
-    //         body.appendChild(creatImg);
-    //     };
-        
-    //     fileReader.readAsDataURL(file);
-    // }
-    const carouselInner = document.querySelector(".carousel-inner");
-
-for(let file of files){
-  const fileReader = new FileReader();
-
-  fileReader.onloadend = (e) => {
-      const { result } = e.target;
-      const creatImg = document.createElement("img");
-      creatImg.src = result;
-      creatImg.classList.add("d-block", "w-100"); // Bootstrap sınıfları
-      const carouselItem = document.createElement("div");
-      carouselItem.classList.add("carousel-item");
-      if(carouselInner.children.length === 0) {
-        carouselItem.classList.add("active");
-      }
-      carouselItem.appendChild(creatImg);
-      carouselInner.appendChild(carouselItem);
-  };
-
-  fileReader.readAsDataURL(file);
-}
 });
